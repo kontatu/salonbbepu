@@ -1,0 +1,68 @@
+.access {
+    height: 980px;
+    background-color: #A193861F;
+}
+
+.access-inner {
+    padding-top: 40%;
+
+    @include sp {
+        padding-top: 20%;
+    }
+
+    .title-contena {
+        width: 50%;
+    }
+
+    .title-box {
+        width: 60%;
+        margin: auto;
+    }
+
+
+}
+
+.access-wrap {
+    display: flex;
+    background-color: #D0C5BA;
+    
+    @include sp {
+        flex-direction: column-reverse;
+        
+    }
+
+    
+}
+
+.access-item {
+    margin: 101px auto;
+    font: normal normal normal 16px/19px Roboto Mono for Powerline;
+    color: #fff;
+
+    @include sp {
+        margin: 10% 5%;
+    }
+
+    &__title {
+        font: normal normal bold 24px/29px Roboto Mono for Powerline;
+        margin-bottom: 30px;
+        color: #00000038;
+    }
+
+    &__desc,&__tel,&__hours,&__day {
+        margin-bottom: 24px;
+    }
+}
+
+.access-map {
+    width: 50%;
+
+    @include sp {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+}

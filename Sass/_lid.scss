@@ -1,0 +1,43 @@
+@mixin max {
+    @media (max-width:1170px){
+        @content;
+    }
+}
+@mixin pc {
+    @media (min-width:1025px){
+        @content;
+    }
+}
+
+@mixin tab {
+    @media (max-width:1024px){
+        @content;
+    }
+}
+
+@mixin sp {
+    @media (max-width:599px){
+        @content;
+    }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.title {
+    display: flex;
+    font-size: 18px;
+    color: #707070;
+    align-items: center;
+    margin-bottom: 11px;
+
+    &::after {
+        display: inline-block;
+        content: "";
+        border-top: 1px solid #707070;
+        width: 80px;
+        margin-left: 20px;
+    }
+}
+

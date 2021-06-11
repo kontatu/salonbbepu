@@ -1,0 +1,136 @@
+.concept {
+    height: 900px;
+    background: linear-gradient(180deg, #A193861F 0%, #A193861F 50%, #A1938689 50%, #A1938689 100%);
+
+    @include sp{
+        height: 600px;
+        background: linear-gradient(180deg, #A193861F 0%, #A193861F 25%, #A1938689 25%, #A1938689 100%);
+
+    }
+
+
+    .inner{
+        padding-top: 291px;
+        width: 90%;
+        margin: auto;
+
+        @include sp{
+            display: block!important;
+            padding-top: 80px;
+        }   
+    }   
+}
+
+.concept-wrap{
+
+    @include sp {
+        width: 90%;
+        margin: auto;
+    }
+    .title {
+        font: normal normal normal 18px/24px Roboto;
+        letter-spacing: 5.4px;
+    }
+
+
+    &__img-first {
+        margin-right: 11px;  
+
+        @include sp{
+            display: none;
+        }
+
+        &-sp {
+            display: none;
+
+            @include sp {
+                margin-right: 11px;
+                display: block;
+            }
+        }
+    }
+    &__img-second {
+
+        @include sp{
+            display: none;
+        }
+
+        &-sp {
+            display: none;
+
+            @include sp {
+                display: block;
+            }
+        }
+    }
+}
+
+.concept-wrap__img {
+    display: flex;
+    justify-content: space-between;
+
+    img{
+        width: 95%;
+        height: 95%;
+
+        @include tab {
+            width: 90%;
+            height: 90%;
+        }
+
+        @include sp {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.concept-item{
+    display: flex;
+
+    @include sp {
+        display: block;
+        text-align: center;
+    }
+
+    &__title {
+            text-align: left;
+            font: normal normal normal 40px/68px Hiragino Mincho Pro;
+            letter-spacing: 16px;
+            color: #FFF;
+            margin: 50px;
+
+            @include sp {
+            margin: 50px 0 18px;
+            font: normal normal normal 18px/31px Hiragino Mincho Pro;
+            text-align: center;
+
+            }
+    }
+
+    &__desc {
+        font: normal normal normal 16px/27px Hiragino Kaku Gothic Pro;
+        letter-spacing: 1.6px;
+        color: #FFF;
+        width: 400px;
+        margin: 50px;
+
+        @include sp {
+            margin: 0;
+            width: 100%;
+            font: normal normal normal 16px/27px Hiragino Kaku Gothic Pro;
+            text-align: center;
+            }
+    }
+} 
+
+
+// .concept-item__img img {
+//     width: 90%;
+//     height: 90%;
+
+//     @include sp {
+//         width: 164px;
+//         height: 205px;
+//     }
+// }

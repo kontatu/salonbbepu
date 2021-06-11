@@ -1,0 +1,99 @@
+.hd-logo {
+    font-weight: bold;
+    font-size: 30px;
+
+    @include max {
+        font-size: 25px;
+    }
+
+    @include tab {
+        font-size: 20px;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 66px 0 0 50px;
+    position: absolute;
+    z-index: 1;
+    
+    @include tab {
+        width: 70%;
+    }
+
+    @include sp {
+        position: static;
+        z-index: 0;
+        margin: 0;
+        padding: 24px 0 24px 20px;
+        width: 100%;
+
+    }
+
+    nav {
+        margin-top: 10px;
+        
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            text-align: right;
+            
+
+            .pc-navmenu {
+
+                &__a {
+                    color: black;
+                    border-bottom:1px solid black ;
+
+                    
+                }
+            }
+
+            li {
+                font-size: 18px;
+                margin-right: 10px;
+                color: #707070;
+
+                @include max {
+                    font-size: 15px;
+                }
+
+                @include tab {
+                    font-size: 12px;
+                }
+
+                @include sp {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.ham-box {
+    text-align: right;
+}
+
+.ham {
+    display: none;
+
+    @include sp {
+        display: flex;
+        width: 25px;
+        height: 14px;
+        justify-content: space-between;
+        flex-direction: column;
+        span {
+            display: inline-block;
+            width: 100%;
+            height: 1px;
+            background-color: #3B4043;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,65 @@
+footer {
+    width: 100%;
+    height: 342px;
+
+    @include sp {
+        height: 200px;
+    }
+}
+
+.footer-boder {
+    border-bottom: 1px solid #7070704D;
+    width: 80%;
+    height: 50%;
+    margin: 0 auto;
+
+    @include sp {
+        height: 30%;
+    }
+}
+
+.footer-item {
+    margin: 75px auto;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+
+    @include sp {
+        flex-direction: column-reverse;
+        margin: 20px auto;
+    }
+
+    &__buttom {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #707070;
+
+        @include sp{
+            width: 50%;
+            margin: 30px auto;
+        }
+    }
+}
+
+
+.footer-logo {
+    font: normal normal normal 32px/32px Roboto Mono for Powerline;
+    color: #7070704D;
+    display: flex;
+    justify-content: space-between;
+
+    @include sp {
+        font-size: 18px;
+    }
+
+    img{
+        margin-left: 5px;
+        margin-top: 10px;
+        width: 20px;
+        height: 22px;
+
+        @include sp{
+            width: 10px;
+            height: 12px;
+        }
+    }
+}

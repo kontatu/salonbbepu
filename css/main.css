@@ -1,0 +1,474 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+*, *:after, *:before {
+  box-sizing: border-box; }
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav, ul, li {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+a:visited {
+  color: inherti; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/*# sourceMappingURL=reset.css.map */
+html {
+  scroll-behavior: smooth; }
+
+.title {
+  display: flex;
+  font-size: 18px;
+  color: #707070;
+  align-items: center;
+  margin-bottom: 11px; }
+  .title::after {
+    display: inline-block;
+    content: "";
+    border-top: 1px solid #707070;
+    width: 80px;
+    margin-left: 20px; }
+
+.hd-logo {
+  font-weight: bold;
+  font-size: 30px; }
+  @media (max-width: 1170px) {
+    .hd-logo {
+      font-size: 25px; } }
+  @media (max-width: 1024px) {
+    .hd-logo {
+      font-size: 20px; } }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 66px 0 0 50px;
+  position: absolute;
+  z-index: 1; }
+  @media (max-width: 1024px) {
+    header {
+      width: 70%; } }
+  @media (max-width: 599px) {
+    header {
+      position: static;
+      z-index: 0;
+      margin: 0;
+      padding: 24px 0 24px 20px;
+      width: 100%; } }
+  header nav {
+    margin-top: 10px; }
+    header nav ul {
+      display: flex;
+      justify-content: space-between;
+      text-align: right; }
+      header nav ul .pc-navmenu__a {
+        color: black;
+        border-bottom: 1px solid black; }
+      header nav ul li {
+        font-size: 18px;
+        margin-right: 10px;
+        color: #707070; }
+        @media (max-width: 1170px) {
+          header nav ul li {
+            font-size: 15px; } }
+        @media (max-width: 1024px) {
+          header nav ul li {
+            font-size: 12px; } }
+        @media (max-width: 599px) {
+          header nav ul li {
+            display: none; } }
+
+.ham-box {
+  text-align: right; }
+
+.ham {
+  display: none; }
+  @media (max-width: 599px) {
+    .ham {
+      display: flex;
+      width: 25px;
+      height: 14px;
+      justify-content: space-between;
+      flex-direction: column; }
+      .ham span {
+        display: inline-block;
+        width: 100%;
+        height: 1px;
+        background-color: #3B4043; } }
+
+.first-v {
+  display: flex;
+  justify-content: space-between;
+  z-index: 999; }
+  @media (max-width: 599px) {
+    .first-v {
+      z-index: 0;
+      background: url(../img/iPhone/Blond-woman-with-long-curly-beautiful-hair.png);
+      height: 100vh;
+      background-size: cover;
+      width: 100%; } }
+  .first-v__wrap {
+    margin: auto;
+    width: 40%; }
+    @media (max-width: 599px) {
+      .first-v__wrap {
+        margin: auto 50px;
+        width: 100%; } }
+  .first-v__first {
+    font: normal normal normal 38px/65px Hiragino Mincho Pro;
+    text-align: center; }
+    @media (max-width: 1024px) {
+      .first-v__first {
+        font: normal normal normal 30px/65px Hiragino Mincho Pro; } }
+    @media (max-width: 599px) {
+      .first-v__first {
+        display: none; } }
+  .first-v__second {
+    font: normal normal normal 38px/128px Zapfino;
+    text-align: center;
+    margin-top: 48px; }
+    @media (max-width: 1024px) {
+      .first-v__second {
+        font: normal normal normal 25px/65px Zapfino;
+        margin-top: 0px; } }
+    @media (max-width: 599px) {
+      .first-v__second {
+        font: normal normal normal 25px/65px Zapfino;
+        color: #FFFFFF;
+        text-shadow: 0px 3px 16px #000000; } }
+  .first-v__three {
+    display: none; }
+    @media (max-width: 599px) {
+      .first-v__three {
+        display: block;
+        color: #FFFFFF;
+        text-shadow: 0px 3px 16px #000000;
+        font: normal normal normal 23px/40px Hiragino Mincho Pro;
+        text-align: center; } }
+
+.first-v__img {
+  background-image: url("../img/Web/Blond-woman-with-long-curly-beautiful-hair@2x.png");
+  position: relative;
+  background-size: cover;
+  width: 60%;
+  height: 100vh; }
+  @media (max-width: 599px) {
+    .first-v__img {
+      display: none; } }
+
+.concept {
+  height: 900px;
+  background: linear-gradient(180deg, #A193861F 0%, #A193861F 50%, #A1938689 50%, #A1938689 100%); }
+  @media (max-width: 599px) {
+    .concept {
+      height: 600px;
+      background: linear-gradient(180deg, #A193861F 0%, #A193861F 25%, #A1938689 25%, #A1938689 100%); } }
+  .concept .inner {
+    padding-top: 291px;
+    width: 90%;
+    margin: auto; }
+    @media (max-width: 599px) {
+      .concept .inner {
+        display: block !important;
+        padding-top: 80px; } }
+
+@media (max-width: 599px) {
+  .concept-wrap {
+    width: 90%;
+    margin: auto; } }
+.concept-wrap .title {
+  font: normal normal normal 18px/24px Roboto;
+  letter-spacing: 5.4px; }
+.concept-wrap__img-first {
+  margin-right: 11px; }
+  @media (max-width: 599px) {
+    .concept-wrap__img-first {
+      display: none; } }
+  .concept-wrap__img-first-sp {
+    display: none; }
+    @media (max-width: 599px) {
+      .concept-wrap__img-first-sp {
+        margin-right: 11px;
+        display: block; } }
+@media (max-width: 599px) {
+  .concept-wrap__img-second {
+    display: none; } }
+.concept-wrap__img-second-sp {
+  display: none; }
+  @media (max-width: 599px) {
+    .concept-wrap__img-second-sp {
+      display: block; } }
+
+.concept-wrap__img {
+  display: flex;
+  justify-content: space-between; }
+  .concept-wrap__img img {
+    width: 95%;
+    height: 95%; }
+    @media (max-width: 1024px) {
+      .concept-wrap__img img {
+        width: 90%;
+        height: 90%; } }
+    @media (max-width: 599px) {
+      .concept-wrap__img img {
+        width: 100%;
+        height: 100%; } }
+
+.concept-item {
+  display: flex; }
+  @media (max-width: 599px) {
+    .concept-item {
+      display: block;
+      text-align: center; } }
+  .concept-item__title {
+    text-align: left;
+    font: normal normal normal 40px/68px Hiragino Mincho Pro;
+    letter-spacing: 16px;
+    color: #FFF;
+    margin: 50px; }
+    @media (max-width: 599px) {
+      .concept-item__title {
+        margin: 50px 0 18px;
+        font: normal normal normal 18px/31px Hiragino Mincho Pro;
+        text-align: center; } }
+  .concept-item__desc {
+    font: normal normal normal 16px/27px Hiragino Kaku Gothic Pro;
+    letter-spacing: 1.6px;
+    color: #FFF;
+    width: 400px;
+    margin: 50px; }
+    @media (max-width: 599px) {
+      .concept-item__desc {
+        margin: 0;
+        width: 100%;
+        font: normal normal normal 16px/27px Hiragino Kaku Gothic Pro;
+        text-align: center; } }
+
+.menu-inner {
+  padding-top: 30%;
+  width: 90%;
+  margin: auto; }
+
+.menu-item {
+  display: flex;
+  justify-content: center; }
+  @media (max-width: 599px) {
+    .menu-item {
+      display: block; } }
+  .menu-item__box {
+    width: 100%;
+    height: 100%;
+    margin-right: 10%; }
+    .menu-item__box:nth-child(3) {
+      margin-right: 0; }
+  .menu-item__title {
+    margin: 37px 35px;
+    height: 30px;
+    font: normal normal normal 30px/36px Roboto Mono for Powerline;
+    letter-spacing: 3px; }
+    @media (max-width: 1024px) {
+      .menu-item__title {
+        font-size: 20px;
+        margin: 25px auto;
+        text-align: center; } }
+  .menu-item__desc {
+    width: 100%;
+    height: 130px;
+    font: normal normal normal 16px/19px Roboto Mono for Powerline;
+    letter-spacing: 1.6px; }
+    @media (max-width: 1024px) {
+      .menu-item__desc {
+        font-size: 12px; } }
+
+.menu-item__img img, .menu-item__img-sp img {
+  width: 100%;
+  height: 100%; }
+@media (max-width: 599px) {
+  .menu-item__img {
+    display: none; } }
+.menu-item__img-sp {
+  display: none; }
+  @media (max-width: 599px) {
+    .menu-item__img-sp {
+      display: block; } }
+
+.access {
+  height: 980px;
+  background-color: #A193861F; }
+
+.access-inner {
+  padding-top: 40%; }
+  @media (max-width: 599px) {
+    .access-inner {
+      padding-top: 20%; } }
+  .access-inner .title-contena {
+    width: 50%; }
+  .access-inner .title-box {
+    width: 60%;
+    margin: auto; }
+
+.access-wrap {
+  display: flex;
+  background-color: #D0C5BA; }
+  @media (max-width: 599px) {
+    .access-wrap {
+      flex-direction: column-reverse; } }
+
+.access-item {
+  margin: 101px auto;
+  font: normal normal normal 16px/19px Roboto Mono for Powerline;
+  color: #fff; }
+  @media (max-width: 599px) {
+    .access-item {
+      margin: 10% 5%; } }
+  .access-item__title {
+    font: normal normal bold 24px/29px Roboto Mono for Powerline;
+    margin-bottom: 30px;
+    color: #00000038; }
+  .access-item__desc, .access-item__tel, .access-item__hours, .access-item__day {
+    margin-bottom: 24px; }
+
+.access-map {
+  width: 50%; }
+  @media (max-width: 599px) {
+    .access-map {
+      width: 100%; } }
+  .access-map iframe {
+    width: 100%; }
+
+footer {
+  width: 100%;
+  height: 342px; }
+  @media (max-width: 599px) {
+    footer {
+      height: 200px; } }
+
+.footer-boder {
+  border-bottom: 1px solid #7070704D;
+  width: 80%;
+  height: 50%;
+  margin: 0 auto; }
+  @media (max-width: 599px) {
+    .footer-boder {
+      height: 30%; } }
+
+.footer-item {
+  margin: 75px auto;
+  display: flex;
+  width: 80%;
+  justify-content: space-between; }
+  @media (max-width: 599px) {
+    .footer-item {
+      flex-direction: column-reverse;
+      margin: 20px auto; } }
+  .footer-item__buttom {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070; }
+    @media (max-width: 599px) {
+      .footer-item__buttom {
+        width: 50%;
+        margin: 30px auto; } }
+
+.footer-logo {
+  font: normal normal normal 32px/32px Roboto Mono for Powerline;
+  color: #7070704D;
+  display: flex;
+  justify-content: space-between; }
+  @media (max-width: 599px) {
+    .footer-logo {
+      font-size: 18px; } }
+  .footer-logo img {
+    margin-left: 5px;
+    margin-top: 10px;
+    width: 20px;
+    height: 22px; }
+    @media (max-width: 599px) {
+      .footer-logo img {
+        width: 10px;
+        height: 12px; } }
+
+/*# sourceMappingURL=main.css.map */
